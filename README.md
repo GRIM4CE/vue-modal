@@ -1,26 +1,25 @@
-# modal
+# @GRIM4CE/Vue-modal
 
-## Project setup
-```
-npm install
-```
+A simple Vue Modal Component.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
+```app.vue
+import VueModal from "@grim4ce/vue-modal";
+
+Vue.component("modal", VueModal);
 ```
 
-### Run your tests
-```
-npm run test
-```
+## Installation
 
-### Lints and fixes files
-```
-npm run lint
+This is a [Node.js](https://nodejs.org/en/) module available through the
+[npm registry](https://www.npmjs.com/).
+
+Before installing, [download and install Node.js](https://nodejs.org/en/download/).
+Node.js 0.10 or higher is required.
+
+Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+```bash
+$ npm install @GRIM4CE/Vue-modal
 ```
