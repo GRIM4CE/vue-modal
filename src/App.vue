@@ -3,7 +3,7 @@
     <div class="modal-container">
       <header class="modal-header" :class="{'no-header' : headerless}">
         <slot name="header" v-if="!headerless"></slot>
-        <fa class="modal-close" icon="times" @click="closeModal()"/>
+        <div class="modal-close" @click="closeModal()">X</div>
       </header>
       <slot></slot>
     </div>
