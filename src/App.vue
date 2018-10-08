@@ -15,7 +15,7 @@ export default {
   props: ['state', 'headerless', 'modalClass'],
   data: () => {
     return {
-      modalState: this.state
+      modalState: null
     }
   },
   methods: {
@@ -26,6 +26,7 @@ export default {
     },
   },
   mounted() {
+    this.modalState = this.state
     document.querySelector('body').classList.add('_lock')
   },
 }
