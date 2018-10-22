@@ -1,52 +1,32 @@
 {
   "name": "@grim4ce/vue-modal",
-  "version": "0.1.501",
-  "main": "./dist/@grim4ce/modal.common.js",
+  "version": "0.1.55",
+  "main": "dist/@grim4ce/vue-modal.umd.js",
+  "module": "dist/@grim4ce/vue-modal.esm.js",
+  "unpkg": "dist/@grim4ce/vue-modal.min.js",
+  "browser": {
+    "./sfc": "src/modal.vue"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name @grim4ce/modal ./src/App.vue"
+    "build": "rollup --config build/rollup.config.js"
   },
   "dependencies": {
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-plugin-eslint": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.6",
+    "@fortawesome/free-solid-svg-icons": "^5.4.1",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "node-sass": "^4.9.4",
+    "rollup": "^0.66.6",
+    "rollup-plugin-buble": "^0.19.4",
+    "rollup-plugin-vue": "^4.3.2",
     "vue-template-compiler": "^2.5.17"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "files": [
     "dist/*",
     "src/*",
-    "public/*",
+    "build/*",
     "*.json",
     "*.js",
     "README.md"
